@@ -1,196 +1,203 @@
-# AI Infused Learning 🚀
-### My Journey into AI Engineering — Session 01
+# AI-Infused-Learning 🚀
+### From Writing My First LLM Script to Building Practical AI Systems
 
-Every AI application starts with a simple question: *What can I build with a model that understands and generates language?*
+> A hands-on journey into AI Engineering — learning by building, experimenting, breaking things, and improving them.
 
-This repository captures the beginning of my hands-on journey into AI Engineering. Instead of stopping at understanding LLM concepts theoretically, I wanted to turn them into working applications, one step at a time.
+## 🌱 The Beginning
 
-What started as a simple terminal-based chatbot gradually evolved into experimenting with model behaviour and building an application that can summarize website content.
+I'm starting my AI Engineering journey with a simple belief: **the best way to understand AI is to build with it.**
 
-Three small projects. One learning journey. A first step towards building practical AI applications.
+Reading about large language models, prompting, and AI applications is important. But I also want to understand what happens when these concepts leave the textbook and become working software.
 
----
+How does a Python application communicate with an LLM? How can we turn a basic model call into an interactive experience? How do we connect models with external information, evaluate their behaviour, and build systems that are useful beyond a simple demonstration?
 
-## 🧭 The Journey: From Conversation to Application
+This repository is where I intend to explore those questions.
 
-### 01. Chat Model — My First Conversation with an LLM 💬
+Rather than treating every lecture as an isolated exercise, I'm documenting my progress through a sequence of sessions. Each session will introduce new concepts, build on earlier work, and gradually increase the complexity of the applications I create.
 
-**The starting point: making a machine respond to me.**
-
-I began with the simplest possible interface: the terminal.
-
-The goal was to connect a Python application to a large language model, send a prompt, receive a response, and understand the basic interaction behind an LLM-powered application.
-
-Without a graphical interface or extra layers of abstraction, I could focus on the fundamentals: how prompts are sent, how responses are received, and how an application communicates with a model.
-
-**What I explored**
-- Connecting Python to an LLM API.
-- Sending prompts and handling model responses.
-- Understanding the basic request–response workflow.
-- Working with environment variables to manage API credentials.
-
-**The takeaway:** Before building an AI product, understand the conversation happening behind the interface.
+This isn't a collection of projects intended to make me look like an expert. It's a record of how I'm working towards becoming a better AI Engineer.
 
 ---
 
-### 02. LLM Arena — Exploring Model Behaviour ⚔️
+## 🧭 The Learning Journey
 
-**The next question: what happens when we experiment with model responses?**
+The repository is organized into session-based folders. Each folder represents a stage of learning, with projects that put the concepts of that stage into practice.
 
-Once I had a working terminal chatbot, I wanted to move beyond a single conversation. I built an LLM Arena with an interactive interface to explore how an LLM application feels when users can experiment with it more conveniently.
+The progression is intentional:
 
-This project represents the transition from a basic script to a more interactive application. It also gave me an opportunity to explore how model outputs can vary depending on the prompts and settings used.
+**Understand → Build → Experiment → Integrate → Evaluate → Improve**
 
-**What I explored**
-- Building an interactive interface with Gradio.
-- Connecting an interface to an LLM-powered Python workflow.
-- Experimenting with prompts and model-generation settings.
-- Understanding the relationship between user input, model configuration, and generated output.
+### Session 01 — First Steps with LLM Applications
 
-**The takeaway:** An LLM is not just an API call. The way users interact with it—and the choices we expose to them—can shape their experience.
+**Focus:** Understanding the fundamentals by building small, working applications.
 
----
+My first session explores what happens when we connect Python applications to large language models and give those models something useful to do.
 
-### 03. AI Website Summarizer — Giving the Model a Job 🌐
+Rather than starting with a complex AI system, I began with a simple terminal-based chatbot and gradually moved towards interactive applications and a practical summarization workflow.
 
-**The next step: moving from conversation to solving a practical problem.**
+**Projects**
 
-A chatbot can respond to questions, but what if I want an application to work with information from a website?
+- **Chat Model:** My first terminal-based interaction with an LLM.
+- **LLM Arena:** An interactive environment for exploring model responses and settings.
+- **AI Website Summarizer:** A workflow that retrieves webpage content and uses an LLM to generate summaries.
 
-That question led to the AI Website Summarizer.
+**Concepts explored:** Python-based LLM integration, prompts, API calls, environment variables, Gradio interfaces, web scraping, and text summarization.
 
-Instead of asking users to manually copy and paste an entire article, the application follows a workflow: retrieve webpage content, extract useful text, and pass that content to an LLM to generate a summary.
+**Goal:** Understand the basic building blocks of an LLM-powered application.
 
-The project brings together multiple components into one application rather than relying on a model call alone.
-
-**What I explored**
-- Retrieving webpage content using Python.
-- Extracting text with web-scraping tools.
-- Passing extracted content to an LLM for summarization.
-- Connecting the workflow to an interactive Gradio interface.
-- Handling the practical challenges of combining data extraction and language generation.
-
-**The takeaway:** The real value of AI engineering emerges when models become part of a larger workflow that solves a specific problem.
+📂 Explore: [`1st Session/`](./1st%20Session/)
 
 ---
 
-## 🛠️ Tech Stack
+### Session 02 — Building More Capable AI Applications
 
-- **Language:** Python
-- **LLM integration:** API-based model interaction
-- **Interface:** Gradio
-- **Web content extraction:** Requests and BeautifulSoup, where used
-- **Configuration:** Environment variables and `.env`
-- **Version control:** Git and GitHub
+**Planned focus:** Moving beyond basic model calls towards more structured and capable applications.
 
-*The exact models, providers, and dependencies are determined by each project's implementation.*
+As the fundamentals become more familiar, the next stage will explore ways to improve how applications manage inputs, organize their workflows, handle errors, and deliver more useful results.
+
+Potential directions include conversation history, structured outputs, improved prompt design, and more robust application flows.
+
+**Goal:** Move from applications that simply work to applications that are better organized, more reliable, and easier to use.
+
+*Projects and scope will be documented as the session progresses.*
 
 ---
 
-## 📁 Repository Structure
+### Session 03 — Giving AI Applications Access to Information
+
+**Planned focus:** Connecting language models with external knowledge and data.
+
+A model's response is only as useful as the information and context available to it. This stage will explore how applications can retrieve, process, and provide relevant information to a model.
+
+Potential directions include document processing, embeddings, semantic search, and retrieval-augmented generation (RAG).
+
+**Goal:** Understand how to build applications that use relevant information rather than relying only on a model's existing knowledge.
+
+---
+
+### Session 04 — Evaluating Model Behaviour
+
+**Planned focus:** Understanding when AI systems work, when they fail, and why.
+
+Generating an answer is not the same as generating a good answer. This stage will focus on evaluating outputs, testing different approaches, examining failure cases, and comparing results using appropriate criteria.
+
+Potential directions include evaluation datasets, repeatable experiments, hallucination analysis, prompt comparisons, and task-specific metrics.
+
+**Goal:** Develop the habit of testing AI behaviour instead of assuming that a working demo is a successful system.
+
+---
+
+### Session 05 — Integrating AI into Complete Workflows
+
+**Planned focus:** Bringing multiple components together into more complete applications.
+
+As the individual concepts become familiar, the focus will shift towards connecting them into coherent workflows.
+
+Potential directions include multi-step pipelines, tool calling, API integration, application state, logging, and better error handling.
+
+**Goal:** Understand how individual AI components fit into a larger software system.
+
+---
+
+### Session 06 and Beyond — Reliability, Deployment, and Advanced Projects
+
+**Planned focus:** Turning experiments into more robust and maintainable applications.
+
+Future sessions may explore testing, deployment, monitoring, performance, cost awareness, and other engineering considerations. The exact direction will depend on what I learn and which gaps become important to address.
+
+**Goal:** Progress towards building AI applications that are not only functional but also testable, maintainable, and useful in real-world settings.
+
+*This roadmap is a direction, not a fixed syllabus. Future sessions will be defined as I gain experience and identify the next skills to develop.*
+
+---
+
+## 📈 How the Complexity Will Grow
+
+The goal is not simply to accumulate more projects. It's to increase the depth of engineering behind them.
+
+| Stage | What changes |
+|---|---|
+| Foundations | Learn how to connect Python to an LLM and obtain responses. |
+| Interaction | Build interfaces and experiment with model behaviour. |
+| Information | Connect applications with external data and knowledge. |
+| Evaluation | Measure results, test assumptions, and investigate failures. |
+| Integration | Combine components into multi-step workflows. |
+| Engineering | Improve reliability, testing, deployment, and maintainability. |
+
+Each stage should build on earlier lessons instead of discarding them.
+
+---
+
+## 🛠️ Tools and Technologies
+
+The technologies used in this repository will evolve with the projects. My current learning includes:
+
+- **Python** — application logic and workflows.
+- **LLM APIs** — interacting with language models.
+- **Gradio** — building interactive AI interfaces.
+- **Web scraping and data processing** — gathering and preparing information.
+- **Git and GitHub** — version control and documenting progress.
+
+Additional tools and frameworks will be introduced when a project genuinely benefits from them.
+
+---
+
+## 📂 Repository Structure
 
 ```text
 AI-Infused-Learning/
+│
 ├── README.md
-├── .gitignore
-└── 1st Session/
-    ├── chat_model/
-    │   └── app.py
-    ├── llm_arena/
-    │   └── arena_app.py
-    ├── summarizer/
-    │   ├── app.py
-    │   ├── scrapper.py
-    │   └── summarize.py
-    ├── requirements.txt
-    └── .env.example
+│
+├── 1st Session/
+│   ├── chat_model/
+│   ├── llm_arena/
+│   ├── summarizer/
+│   ├── requirements.txt
+│   └── README.md
+│
+├── 2nd Session/
+│   └── Future projects and documentation
+│
+├── 3rd Session/
+│   └── Future projects and documentation
+│
+└── ...
 ```
 
-The repository may evolve as I add documentation, improve project organization, and build more applications.
+Each session will have its own folder and README documenting its purpose, projects, setup instructions, concepts learned, and challenges encountered.
+
+The root README serves as the map of the entire journey. Individual session READMEs provide the details of the work completed at each stage.
+
+*Future session folders will be added as the corresponding work begins.*
 
 ---
 
-## 🚀 Getting Started
+## 🧠 My Approach to Learning
 
-### Prerequisites
-- Python installed on your system.
-- API credentials for the model provider used by the relevant project.
-- Git, if you want to clone the repository.
+I want this repository to reflect the actual process of learning engineering, including the parts that are easy to leave out of a polished portfolio.
 
-### Setup
+For each session, I aim to document:
 
-Clone the repository:
+- **What I built:** The application or experiment and the problem it addresses.
+- **What I learned:** The concepts and tools I applied.
+- **What challenged me:** Bugs, design decisions, limitations, and mistakes.
+- **What I improved:** Changes made after testing and reflection.
+- **What's next:** The questions or skills that will guide the next stage.
 
-```bash
-git clone https://github.com/vishwaspatidar/AI-Infused-Learning.git
-cd AI-Infused-Learning
-```
-
-Navigate to the first session:
-
-```bash
-cd "1st Session"
-```
-
-Create and activate a virtual environment:
-
-```bash
-python -m venv .venv
-```
-
-macOS/Linux:
-
-```bash
-source .venv/bin/activate
-```
-
-Install the dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Create your own local `.env` file using `.env.example` as a reference. Add your own API credentials using the exact variable names expected by the code.
-
-**Never commit your actual `.env` file or API keys.**
-
-### Run the projects
-
-Run each project from its respective directory, using the relevant entry point:
-
-| Project | Entry point |
-|---|---|
-| Chat Model | `chat_model/app.py` |
-| LLM Arena | `llm_arena/arena_app.py` |
-| Website Summarizer | `summarizer/app.py` |
-
-For example, from the `1st Session` directory:
-
-```bash
-python chat_model/app.py
-```
-
-For the Gradio-based projects, run the corresponding entry point in the same way. If the dependencies or environment variables differ by project, follow that project's setup instructions.
+The objective is to build understanding, not merely to make a project run once.
 
 ---
 
-## 🧠 What This Session Taught Me
+## 🔭 The Long-Term Goal
 
-The biggest lesson was that building an AI application involves more than sending a prompt to a model.
+I want to grow from writing basic LLM-powered scripts to understanding how to design, build, evaluate, and improve practical AI systems.
 
-It means connecting components, managing configuration, designing an interaction, processing information, and making the entire workflow usable.
+That means learning not only how to use models, but also how to reason about their behaviour, work with information, test their limitations, and engineer the software around them.
 
-These projects are early experiments, not production-ready systems. They are a foundation I can build upon as I deepen my understanding of LLMs, evaluation, retrieval, and AI application development.
+This repository will evolve as I do.
 
----
+**One session at a time. One project at a time. One lesson at a time.**
 
-## 🔭 What's Next?
-
-This is the first session, not the finish line.
-
-As I continue learning, I want to move beyond making AI applications work and start understanding how to make them more reliable, evaluate their behaviour, handle failure cases, and solve increasingly meaningful problems.
-
-I'll use this repository to document that progression—what I build, what I learn, what breaks, and how I improve.
-
-**Learning by building. Improving through experimentation. One project at a time.**
+If you're also learning AI Engineering, I hope this journey is useful to follow.
 
